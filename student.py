@@ -1,3 +1,14 @@
+def calculate_grade(marks):
+    if marks >= 90:
+        return "A"
+    elif marks >= 75:
+        return "B"
+    elif marks >= 50:
+        return "C"
+    else:
+        return "Fail"
+
+
 def display_student():
     name = "Preci"
     roll_no = 10
@@ -7,3 +18,4 @@ def display_student():
 
 
 display_student()
+print("Grade:", calculate_grade(int(input("enter marks\t"))))
